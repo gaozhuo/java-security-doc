@@ -1,7 +1,7 @@
 /**
  * 2009-8-20
  */
-package javasecuritydemo.base64;
+package com.example.demo.base64;
 
 import sun.misc.BASE64Decoder;
 import sun.misc.BASE64Encoder;

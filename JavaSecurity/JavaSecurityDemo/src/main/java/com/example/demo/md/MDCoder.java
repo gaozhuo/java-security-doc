@@ -6,7 +6,6 @@ package com.example.demo.md;
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
 
 import java.security.MessageDigest;
-import java.security.Security;
 
 /**
  * MD消息摘要

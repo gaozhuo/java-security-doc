@@ -1,7 +1,7 @@
 import org.junit.Test;
 
-import javax.crypto.KeyGenerator;
-import javax.crypto.SecretKey;
+import java.security.Provider;
+import java.security.Security;
 
 /**
  * @author gaozhuo
@@ -11,9 +11,18 @@ public class MyTest {
 
     @Test
     public final void myTest() throws Exception {
-        KeyGenerator keyGenerator = KeyGenerator.getInstance("DES");
-        SecretKey secretKey = keyGenerator.generateKey();
-        System.out.println(secretKey.toString());
+
+        for (Provider provider : Security.getProviders()) {
+
+            System.out.println("Provider: " + provider.getName());
+
+            for (Provider.Service service : provider.getServices()) {
+                System.out.println("Type: " + service.getType());
+                System.out.println("Algorithm: " + service.getAlgorithm());
+            }
+            System.out.println("\n");
+        }
+
 
     }
 

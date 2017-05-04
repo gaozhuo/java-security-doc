@@ -3,16 +3,13 @@
  */
 package com.example.demo.encrypt;
 
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-
-import java.security.Key;
-import java.security.SecureRandom;
-
 import javax.crypto.Cipher;
 import javax.crypto.KeyGenerator;
 import javax.crypto.SecretKey;
 import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.DESKeySpec;
+import java.security.Key;
+import java.security.SecureRandom;
 
 /**
  * DES加解密

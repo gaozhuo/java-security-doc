@@ -17,8 +17,7 @@ public class MyTest {
             System.out.println("Provider: " + provider.getName());
 
             for (Provider.Service service : provider.getServices()) {
-                System.out.println("Type: " + service.getType());
-                System.out.println("Algorithm: " + service.getAlgorithm());
+                System.out.println("Type: " + service.getType() + " Algorithm: " + service.getAlgorithm());
             }
             System.out.println("\n");
         }

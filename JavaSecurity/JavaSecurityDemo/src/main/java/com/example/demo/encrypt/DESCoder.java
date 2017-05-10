@@ -122,7 +122,7 @@ public class DESCoder {
 		/*
          * 初始化密钥生成器 若要使用64bit密钥注意替换 将下述代码kg.init(56); 替换为kg.init(64);
 		 */
-        kg.init(56, new SecureRandom());
+        kg.init(56);
 
         // 生成秘密密钥
         SecretKey secretKey = kg.generateKey();
